@@ -1,0 +1,12 @@
+{
+  "home": {
+    "title": "Kopacze - Diggers",
+    "content": "Something about Kopacze",
+    "about": "About us"
+  },
+  "about": {
+    "title": "About us",
+    "content": "We are queer-feminist collective",
+    "home": "Back to home"
+  }
+  }
