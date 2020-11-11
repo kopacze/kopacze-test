@@ -1,13 +1,18 @@
 {
-    "home": {
-      "title": "Kopacze - Diggers",
-      "content": "Coś o Kopaczach",
-      "about": "O nas"
-    },
-    "about": {
-      "title": "O nas",
-      "content": "Jesteśmy feministyczno-queerowym kolektywem",
-      "home": "Powrót do strony głównej"
-    },
-    "languageSwitch": "EN"
+  "home": {
+    "title": "Kopacze - Diggers",
+    "content": "Coś o Kopaczach",
+    "about": "O nas"
+  },
+  "about": {
+    "title": "O nas",
+    "content": "Jesteśmy feministyczno-queerowym kolektywem",
+    "home": "Powrót do strony głównej"
+  },
+  "languageSwitch": "EN",
+  "menu": {
+    "home": "Start",
+    "about": "O nas",
+    "contact": "Kontakt"
   }
+}

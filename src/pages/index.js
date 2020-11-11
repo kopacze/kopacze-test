@@ -1,6 +1,5 @@
 
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import { useTranslation } from "react-i18next"
@@ -22,7 +21,6 @@ const IndexPage = (props) => {
       }
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       </div>
-      <Link to="/about/">{t('home.about')}</Link>
     </div>
   )
 }

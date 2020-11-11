@@ -1,8 +1,11 @@
-import PropTypes from "prop-types"
 import React from "react"
 import LanguageMenu from "./languageMenu"
 import styled from "styled-components"
 
+const StyledLanguageMenu = styled(LanguageMenu)`
+  position: absolute;
+  right: 30px;
+`
 
 const StyledHeader = styled.header`
   background: rebeccapurple;
@@ -10,21 +13,38 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
   height: 100px;
-`;
+`
 
-const Header = ({ siteTitle }) => (
+const StyledLinksWrapper = styled.div`
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    font-size: 1.5rem;
+    padding: 0 20px;
+
+    &:hover {
+      color: lightblue;
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    a {
+      display: none;
+    }
+  }
+`
+
+const Header = ({ children }) => (
   <StyledHeader>
-    {siteTitle}
-    <LanguageMenu style={{position: 'absolute', right: '30px'}}></LanguageMenu>
+    <StyledLinksWrapper>{children}</StyledLinksWrapper>
+    <StyledLanguageMenu></StyledLanguageMenu>
   </StyledHeader>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: `Kopacze - Diggers`,
-}
 
 export default Header

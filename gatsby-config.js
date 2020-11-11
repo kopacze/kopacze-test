@@ -23,5 +23,17 @@ module.exports = {
         component: `${__dirname}/src/components/layout.js`
       }
     },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            variants: [`400`, `500`, `600`, `700`]
+          }
+        ],
+      },
+    }
   ],
 }

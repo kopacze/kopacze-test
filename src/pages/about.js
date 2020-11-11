@@ -1,6 +1,5 @@
 
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import { useTranslation } from "react-i18next"
@@ -13,7 +12,6 @@ const AboutPage = () => {
       <SEO title="About page" />
       <h1>{t('about.title')}</h1>
       <p>{t('about.content')}</p>
-      <Link to="/">{t('about.home')}</Link>
     </div>
   )
 }

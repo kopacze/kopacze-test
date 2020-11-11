@@ -1,14 +1,43 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
+const StyledHamburgerMenuWrapper = styled.div`
+  @media all and (min-width: 901px) {
+    &,
+    * {
+      display: none;
+    }
+  }
+`
+
 const StyledHamburgerNav = styled.nav`
   width: 300px;
   height: 100vh;
   position: fixed;
+  padding: 100px 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   background: #e86856;
   transform: ${({ showNav }) =>
     showNav ? "translateX(0px)" : "translateX(-300px)"};
   transition: transform 250ms ease-in-out;
+  z-index: 1;
+  opacity: 0.95;
+
+  a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    font-size: 1.5rem;
+    padding: 10px 0;
+
+    &:hover {
+      color: lightblue;
+    }
+  }
 `
 
 const StyledHamburger = styled.button`
@@ -21,7 +50,8 @@ const StyledHamburger = styled.button`
   background-color: transparent;
   border: 0;
   z-index: 999;
-  transform: ${({hamburger}) => hamburger ? "translate(0,0)" : "translate(20px, 20px)"};
+  transform: ${({ hamburger }) =>
+    hamburger ? "translate(0,0)" : "translate(20px, 20px)"};
   transition: transform 250ms ease-in-out;
 `
 
@@ -39,44 +69,50 @@ const HamburgerInner = styled.span`
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: ${({hamburger}) => hamburger ? 'transparent': '#333'};
+  background-color: ${({ hamburger }) => (hamburger ? "transparent" : "#333")};
   transition: background-color 100ms ease-in-out;
   &::after {
-      content: '';
-      left: 0;
-      height: 3px;
-      width: 100%;
-      position: absolute;
-      background-color: #333;
-      top: 8px;
-      transform: ${({hamburger}) => hamburger ? 'translateY(-8px) rotate(-135deg)' : 'translateY(0) rotate(0)'};
-      transition: transform 250ms ease-in-out;
+    content: "";
+    left: 0;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 8px;
+    transform: ${({ hamburger }) =>
+      hamburger
+        ? "translateY(-8px) rotate(-135deg)"
+        : "translateY(0) rotate(0)"};
+    transition: transform 250ms ease-in-out;
   }
 
   &::before {
-      content: '';
-      left: 0;
-      height: 3px;
-      width: 100%;
-      position: absolute;
-      background-color: #333;
-      top: -8px;
-      transform: ${({hamburger}) => hamburger ? 'translateY(8px) rotate(135deg)' : 'translateY(0) rotate(0)'};
-      transition: transform 250ms ease-in-out;
+    content: "";
+    left: 0;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+    top: -8px;
+    transform: ${({ hamburger }) =>
+      hamburger ? "translateY(8px) rotate(135deg)" : "translateY(0) rotate(0)"};
+    transition: transform 250ms ease-in-out;
   }
 `
 
-const HamburgerNav = () => {
+const HamburgerNav = ({ children }) => {
   const [menu, showMenu] = useState(false)
   return (
-    <>
-      <StyledHamburgerNav showNav={menu} />
+    <StyledHamburgerMenuWrapper>
+      <StyledHamburgerNav showNav={menu} onClick={() => showMenu(!menu)}>
+        {children}
+      </StyledHamburgerNav>
       <StyledHamburger hamburger={menu} onClick={() => showMenu(!menu)}>
         <HamburgerBox>
           <HamburgerInner hamburger={menu} />
         </HamburgerBox>
       </StyledHamburger>
-    </>
+    </StyledHamburgerMenuWrapper>
   )
 }
 

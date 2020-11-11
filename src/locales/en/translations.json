@@ -9,5 +9,10 @@
     "content": "We are queer-feminist collective",
     "home": "Back to home"
   },
-  "languageSwitch": "PL"
+  "languageSwitch": "PL",
+  "menu": {
+    "home": "Home",
+    "about": "About us",
+    "contact": "Contact"
   }
+}
