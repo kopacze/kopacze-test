@@ -8,7 +8,7 @@ const StyledLanguageMenu = styled(LanguageMenu)`
 `
 
 const StyledHeader = styled.header`
-  background: rebeccapurple;
+  background: seagreen;
   display: flex;
   justify-content: center;
   align-items: center;

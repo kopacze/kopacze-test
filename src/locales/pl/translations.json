@@ -1,18 +1,22 @@
 {
   "home": {
     "title": "Kopacze - Diggers",
-    "content": "Coś o Kopaczach",
-    "about": "O nas"
+    "content": "Jesteśmy kłirowym projektem aktywistyczno-mieszkalnym, nacelowanym na organizowanie i goszczenie warsztatów, retritów i innych wydarzeń związanych z szeroko pojętym aktywizmem społeczym i ekologicznym.\n Przez ostatnie lata istnienia projektu pracowałyliśmy głównie nad stworzeniem ogrodu, ekologicznych przetworów oraz remontem przestrzeni. Kilka grup odbyło u nas swoje spotkania, a w 2018 roku miał miejsce Obóz Kłirowo-Feministyczny.",
+    "options": "Co możesz z nami zrobić?",
+    "optionsList": "Pomóc nam znaleźć możliwości finansowania projektu\nPrzyjechać posiedzieć\nPrzyjechać pomóc w pracach\nPodarować nam rzeczy (narzędzia, opał, materiały)\nZorganizować w naszych przestrzeniach warsztat, wydarzenie czy retrit\nPrzyjechać na odosobnienie, przyjechać zadbać o siebie"
   },
   "about": {
     "title": "O nas",
-    "content": "Jesteśmy feministyczno-queerowym kolektywem",
-    "home": "Powrót do strony głównej"
+    "content": "Jesteśmy grupą osób, wywodzących się z różnego rodzaju obszarów aktywizmu, takich jak: feminizm, queer, prawa zwierząt, prawa człowieka, głęboka ekologia. Jesteśmy kolektywem mieszkalnym, nastawionym na tworzenie nowych wzorców relacji między sobą nawzajem i innymi istotami. Chcemy, żeby nasz dom był bezpieczniejszą przestrzenią dla nas i wszystkich osób, które chcą z niej korzystać.",
+    "space": "Nasza przestrzeń",
+    "aboutSpace": "Przestrzeni jest tu mnóstwo. Las, otwarta przestrzeń łąk i stawu. Przestrzeń w budynkach - stara stodoła, która stanie się w przyszłości naszą główną salą warsztatową i miejscami noclegowymi. Kilka warsztatów, w które planujemy tchnąć życie oraz dom mieszkalny ze strychem.\nObecnie jesteśmy w stanie ugościć grupy do 6-8 osób, w cieplejsze pory roku większe, z opcją nocowania w namiotach i pracy na świeżym powietrzu.\nProjekt znajduje się w odosobnieniu, otoczony z jednej strony lasem a z drugiej stawem, łąkami i mokradłami."
+  
   },
   "languageSwitch": "EN",
   "menu": {
     "home": "Start",
     "about": "O nas",
     "contact": "Kontakt"
-  }
+  },
+  "notFound": "Nie znaleziono strony"
 }

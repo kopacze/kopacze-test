@@ -18,7 +18,7 @@ const StyledHamburgerNav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background: #e86856;
+  background: saddlebrown;
   transform: ${({ showNav }) =>
     showNav ? "translateX(0px)" : "translateX(-300px)"};
   transition: transform 250ms ease-in-out;

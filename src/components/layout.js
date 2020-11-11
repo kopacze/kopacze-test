@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
     bottom: 0;
     left: 0;
     padding: 20px 50px;
-    background-color: lightcoral;
+    background-color: seagreen;
     color: white;
     `;
 
