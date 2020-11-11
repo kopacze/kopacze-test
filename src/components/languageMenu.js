@@ -1,37 +1,32 @@
 import React, { useState } from "react"
-import Select from '@material-ui/core/Select'
-import MenuItem from '@material-ui/core/MenuItem'
 import { useTranslation } from "react-i18next"
+import styled from "styled-components"
 
+const StyledButton = styled.button`
+  position: absolute;
+  right: 30px;
+  padding: 14px;
+  width: 45px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+`
 
-const LanguageMenu = (props) => {
-  const { i18n } = useTranslation()
-  
-  const [values, setValues] = useState({
-    language: 'en'
-  });
+const LanguageMenu = props => {
+  const { i18n, t } = useTranslation()
+
+  const [language, setLanguage] = useState("en")
 
   function handleChange(event) {
-    i18n.changeLanguage(event.target.value)
+    i18n.changeLanguage(event.target.innerText.toLowerCase())
 
-    setValues(oldValues => ({
-      ...oldValues,
-      [event.target.name]: event.target.value,
-    }));
+    setLanguage(event.target.innerText.toLowerCase())
   }
 
-  return(
-    <Select
-      value={values.language}
-      onChange={(e) => handleChange(e)}
-      disableUnderline
-      inputProps={{
-        name: 'language'
-      }}
-    >
-      <MenuItem value={'en'}>EN</MenuItem>
-      <MenuItem value={'pl'}>PL</MenuItem>
-    </Select>
+  return (
+    <StyledButton onClick={e => handleChange(e)} value={language}>
+      {t('languageSwitch')}
+    </StyledButton>
   )
 }
 
