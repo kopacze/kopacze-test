@@ -4,18 +4,23 @@ import Header from "./header"
 import { createGlobalStyle } from "styled-components"
 import HamburgerNav from "./hamburgerNav"
 import { Link } from "gatsby"
-import styled from "styled-components";
+import styled from "styled-components"
 
 const StyledFooter = styled.footer`
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 20px 50px;
-    background-color: seagreen;
-    color: white;
-    `;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px 50px;
+  background-color: seagreen;
+  color: white;
+`
 
+const StyledFooterContent = styled.div`
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+`
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -28,10 +33,16 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children, t }) => {
   const Links = [
-      <Link to="/" key="navLink1">{t("menu.home")}</Link>,
-      <Link to="/about" key="navLink2">{t("menu.about")}</Link>,
-      <Link to="/support-us" key="navLink3">{t("menu.supportUs")}</Link>
-   ];
+    <Link to="/" key="navLink1">
+      {t("menu.home")}
+    </Link>,
+    <Link to="/about" key="navLink2">
+      {t("menu.about")}
+    </Link>,
+    <Link to="/support-us" key="navLink3">
+      {t("menu.supportUs")}
+    </Link>,
+  ]
   return (
     <div>
       <GlobalStyle />
@@ -41,7 +52,9 @@ const Layout = ({ children, t }) => {
         <main>{children}</main>
       </div>
       <StyledFooter>
-        © {new Date().getFullYear()}, {t("home.title")}
+        <StyledFooterContent>
+          © {new Date().getFullYear()}, {t("home.title")}
+        </StyledFooterContent>
       </StyledFooter>
     </div>
   )
