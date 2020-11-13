@@ -10,13 +10,17 @@
     "content": "Jesteśmy grupą osób, wywodzących się z różnego rodzaju obszarów aktywizmu, takich jak: feminizm, queer, prawa zwierząt, prawa człowieka, głęboka ekologia. Jesteśmy kolektywem mieszkalnym, nastawionym na tworzenie nowych wzorców relacji między sobą nawzajem i innymi istotami. Chcemy, żeby nasz dom był bezpieczniejszą przestrzenią dla nas i wszystkich osób, które chcą z niej korzystać.",
     "space": "Nasza przestrzeń",
     "aboutSpace": "Przestrzeni jest tu mnóstwo. Las, otwarta przestrzeń łąk i stawu. Przestrzeń w budynkach - stara stodoła, która stanie się w przyszłości naszą główną salą warsztatową i miejscami noclegowymi. Kilka warsztatów, w które planujemy tchnąć życie oraz dom mieszkalny ze strychem.\nObecnie jesteśmy w stanie ugościć grupy do 6-8 osób, w cieplejsze pory roku większe, z opcją nocowania w namiotach i pracy na świeżym powietrzu.\nProjekt znajduje się w odosobnieniu, otoczony z jednej strony lasem a z drugiej stawem, łąkami i mokradłami."
-  
+  },
+  "supportUs": {
+    "title": "Wesprzyj nas",
+    "content": "Aktualnie potrzebujemy różnego rodzaju narzędzi ręcznych i elektrycznych, wszelkich materiałów budowlanych (drewna, gliny, cegieł szamotowych, okien).\nChętnie przyjmiemy też nasiona, sadzonki, krzewy i drzewa.\nSzukamy także źródeł finansowania, jeśli masz jakieś pomysły albo umiejętności w zakresie fundrisingu, daj nam znać!\nDoceniamy także pomoc fizyczną! Jeśli chcesz przyjechać pomóc w konkretnych pracach, napisz do nas, powiemy ci, czym aktualnie się zajmujemy i jakiego rodzaju pomocy potrzebujemy.\nJeśli masz wiedzę i umiejętności z zakresu budownictwa, elektryki, wykończeniówki, dekarstwa, okniarstwa, etc którymi chcesz się podzielić, bardzo chętnie się naczymy!",
+    "email": "kopacze_diggers@riseup.net"
   },
   "languageSwitch": "EN",
   "menu": {
     "home": "Start",
     "about": "O nas",
-    "contact": "Kontakt"
+    "cupportUs": "Wesprzyj nas"
   },
   "notFound": "Nie znaleziono strony"
 }

@@ -30,7 +30,7 @@ const Layout = ({ children, t }) => {
   const Links = [
       <Link to="/" key="navLink1">{t("menu.home")}</Link>,
       <Link to="/about" key="navLink2">{t("menu.about")}</Link>,
-      <Link to="/contact" key="navLink3">{t("menu.contact")}</Link>
+      <Link to="/support-us" key="navLink3">{t("menu.supportUs")}</Link>
    ];
   return (
     <div>

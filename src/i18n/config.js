@@ -1,6 +1,7 @@
 import i18next from 'i18next';
+import detector from "i18next-browser-languagedetector";
 
-i18next.init({
+i18next.use(detector).init({
     fallbackLng: 'pl',
     resources: {
         pl: {

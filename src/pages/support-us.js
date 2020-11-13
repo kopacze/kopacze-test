@@ -1,0 +1,33 @@
+import React from "react"
+
+import SEO from "../components/seo"
+import { useTranslation } from "react-i18next"
+import StyledContainer from "../components/styledContainer"
+import StyledBackgroundImage from "../components/styledBackgroundImage"
+import firstImage from "../assets/kopacze-8.jpeg"
+import StyledSection from "../components/styledSection"
+
+const SupportUsPage = props => {
+  const { t } = useTranslation()
+
+  return (
+    <>
+      <SEO title="Support us page" />
+      <StyledSection>
+        <StyledBackgroundImage background={firstImage}></StyledBackgroundImage>
+        <StyledContainer>
+          <h1>{t("supportUs.title")}</h1>
+          {t("supportUs.content")
+            .split("\n")
+            .map((item, key) => {
+              return <p key={key}>{item}</p>
+            })}
+
+            <span>kopacze@riseup.net</span>
+        </StyledContainer>
+      </StyledSection>
+    </>
+  )
+}
+
+export default SupportUsPage

@@ -11,11 +11,16 @@
     "space": "Our space",
     "aboutSpace": "There's plenty of space here. We are surrounded by forests, medows and fields, with a little pond just behind our house. The farm itself consist of couple of buildings - an old barn which is going to become our main workshop space in the future, three workshop spaces and house with an attic.\nAt the moment we have the capacity to host groups of 6-8 people and bigger groups in summer (camping and working outside in provided outdoor facilities)."
   },
+  "supportUs": {
+    "title": "Support us",
+    "content": "We're currently in need for hand tools, power tools, all kind of construction materials and building stuff (wood, clay, firebricks, windows).\nSeeds and plants are welcome as well!\nWe're also looking for means of financial support, if you have any ideas or skills you would like to share in this topic, contact us!\nWe appreciate any kind of physical help, if you want to come and help by doing something, drop us a line, we'll tell you, what is currently going on and what kind of help would be useful.\nIf you have any knowledge or skills in the areas of construction, electrics, renovation, roofing, windowing, etc you would like to share, we would be very happy to learn!",
+    "email": "kopacze_diggers@riseup.net"
+  },
   "languageSwitch": "PL",
   "menu": {
     "home": "Home",
     "about": "About us",
-    "contact": "Contact"
+    "supportUs": "Support us"
   },
   "notFound": "Page not found"
 }
