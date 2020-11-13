@@ -66,7 +66,7 @@ const IndexPage = props => {
       </StyledSection>
       <StyledSection>
         <StyledBackgroundImage background={secondImage}></StyledBackgroundImage>
-        <StyledContainer style={{ height: "100vh" }}>
+        <StyledContainer style={{ minHeight: "100vh" }}>
           <h2>{t("home.options")}</h2>
           <StyledUl>
             {t("home.optionsList")

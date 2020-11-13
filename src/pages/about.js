@@ -27,7 +27,7 @@ const AboutPage = () => {
       </StyledSection>
       <StyledSection>
         <StyledBackgroundImage background={secondImage}></StyledBackgroundImage>
-        <StyledContainer style={{ height: "100vh" }}>
+        <StyledContainer style={{ minHeight: "100vh" }}>
           <h1>{t("about.space")}</h1>
           {t("about.aboutSpace")
             .split("\n")

@@ -26,10 +26,35 @@ const StyledLinksWrapper = styled.div`
     font-weight: bold;
     letter-spacing: 0.03rem;
     font-size: 1.5rem;
-    padding: 0 20px;
+    margin: 0 20px;
+    position: relative;
 
     &:hover {
       color: lightblue;
+    }
+  }
+
+  &:not(:hover) {
+    a[aria-current]::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: saddlebrown;
+    }
+  }
+
+  &:hover {
+    a:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: saddlebrown;
     }
   }
 

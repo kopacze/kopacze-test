@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
-
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  height: calc(100vh - 150px);
+  min-height: calc(100vh - 150px);
+  padding: 100px 0;
   align-items: center;
   justify-content: center;
   opacity: 1;
@@ -19,8 +19,10 @@ const StyledContainer = styled.div`
     letter-spacing: 0.5rem;
   }
 
-  h1 {
-    font-size: 3rem;
+  @media screen and (min-width: 400px) {
+    h1 {
+      font-size: 3rem;
+    }
   }
 
   h2 {
@@ -34,4 +36,4 @@ const StyledContainer = styled.div`
   }
 `
 
-export default StyledContainer;
+export default StyledContainer

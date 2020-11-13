@@ -33,9 +33,34 @@ const StyledHamburgerNav = styled.nav`
     letter-spacing: 0.03rem;
     font-size: 1.5rem;
     padding: 10px 0;
+    position: relative;
 
     &:hover {
       color: lightblue;
+    }
+  }
+
+  &:not(:hover) {
+    a[aria-current]::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -20px;
+      width: 3px;
+      background-color: seagreen;
+    }
+  }
+
+  &:hover {
+    a:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -20px;
+      width: 3px;
+      background-color: seagreen;
     }
   }
 `
