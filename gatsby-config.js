@@ -24,16 +24,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto Mono`,
-            variants: [`400`, `500`, `600`, `700`]
-          }
-        ],
-      },
-    }
+    `gatsby-plugin-preload-fonts`
   ],
 }

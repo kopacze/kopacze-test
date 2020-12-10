@@ -1,6 +1,8 @@
 import React from "react"
 import LanguageMenu from "./languageMenu"
 import styled from "styled-components"
+import {PRIMARY, SECONDARY} from "../common/colors";
+
 
 const StyledLanguageMenu = styled(LanguageMenu)`
   position: absolute;
@@ -8,7 +10,7 @@ const StyledLanguageMenu = styled(LanguageMenu)`
 `
 
 const StyledHeader = styled.header`
-  background: seagreen;
+  background: ${PRIMARY};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +32,7 @@ const StyledLinksWrapper = styled.div`
     position: relative;
 
     &:hover {
-      color: lightblue;
+      color: ${SECONDARY};
     }
   }
 
@@ -42,7 +44,7 @@ const StyledLinksWrapper = styled.div`
       left: 0;
       right: 0;
       height: 3px;
-      background-color: saddlebrown;
+      background-color: ${SECONDARY};
     }
   }
 
@@ -54,7 +56,7 @@ const StyledLinksWrapper = styled.div`
       left: 0;
       right: 0;
       height: 3px;
-      background-color: saddlebrown;
+      background-color: ${SECONDARY};
     }
   }
 

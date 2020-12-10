@@ -5,6 +5,7 @@ import { createGlobalStyle } from "styled-components"
 import HamburgerNav from "./hamburgerNav"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import {PRIMARY} from "../common/colors";
 
 const StyledFooter = styled.footer`
   position: fixed;
@@ -12,7 +13,7 @@ const StyledFooter = styled.footer`
   bottom: 0;
   left: 0;
   padding: 20px 50px;
-  background-color: seagreen;
+  background-color: ${PRIMARY};
   color: white;
 `
 
@@ -53,7 +54,7 @@ const Layout = ({ children, t }) => {
       </div>
       <StyledFooter>
         <StyledFooterContent>
-          © {new Date().getFullYear()}, {t("home.title")}
+          © {new Date().getFullYear()}, {t("footer")}
         </StyledFooterContent>
       </StyledFooter>
     </div>

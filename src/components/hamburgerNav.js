@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import {PRIMARY, SECONDARY} from "../common/colors";
 
 const StyledHamburgerMenuWrapper = styled.div`
   @media all and (min-width: 901px) {
@@ -18,7 +19,7 @@ const StyledHamburgerNav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background: saddlebrown;
+  background: ${SECONDARY};
   transform: ${({ showNav }) =>
     showNav ? "translateX(0px)" : "translateX(-300px)"};
   transition: transform 250ms ease-in-out;
@@ -36,7 +37,7 @@ const StyledHamburgerNav = styled.nav`
     position: relative;
 
     &:hover {
-      color: lightblue;
+      color: ${PRIMARY};
     }
   }
 
@@ -48,7 +49,7 @@ const StyledHamburgerNav = styled.nav`
       bottom: 0;
       left: -20px;
       width: 3px;
-      background-color: seagreen;
+      background-color: ${PRIMARY};
     }
   }
 
@@ -60,7 +61,7 @@ const StyledHamburgerNav = styled.nav`
       bottom: 0;
       left: -20px;
       width: 3px;
-      background-color: seagreen;
+      background-color: ${PRIMARY};
     }
   }
 `

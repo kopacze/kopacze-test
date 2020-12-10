@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledBackgroundImage = styled.div`
   position: absolute;
-  background-image: url(${({ background }) => background});
+  background-image: linear-gradient(to bottom, rgb(192, 192, 192, 0.42), rgb(227, 129, 217, 0.8)), url(${({ background }) => background});
   background-size: cover;
   opacity: 0.5;
   height: 100%;

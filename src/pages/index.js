@@ -8,6 +8,7 @@ import secondImage from "../assets/kopacze-3.jpeg"
 import StyledContainer from "../components/styledContainer";
 import StyledBackgroundImage from "../components/styledBackgroundImage";
 import StyledSection from "../components/styledSection"
+import { PRIMARY, SECONDARY } from "../common/colors"
 
 const StyledUl = styled.ul`
   list-style: none;
@@ -29,8 +30,8 @@ const StyledUl = styled.ul`
     text-align: center;
     font-size: 1.3rem;
 
-    border: 2px solid black;
-    box-shadow: 6px 4px lightgrey;
+    border: 5px solid ${SECONDARY};
+    box-shadow: 6px 4px ${PRIMARY};
     background-color: white;
     opacity: 0.8;
     border-radius: 15px;
