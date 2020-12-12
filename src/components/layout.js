@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     p, li {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
     div {
