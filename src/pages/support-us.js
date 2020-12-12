@@ -7,7 +7,7 @@ import StyledBackgroundImage from "../components/styledBackgroundImage"
 import firstImage from "../assets/kopacze-8.jpeg"
 import StyledSection from "../components/styledSection"
 
-const SupportUsPage = props => {
+const SupportUsPage = () => {
   const { t } = useTranslation()
 
   return (

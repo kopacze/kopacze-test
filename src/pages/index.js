@@ -9,6 +9,7 @@ import StyledContainer from "../components/styledContainer";
 import StyledBackgroundImage from "../components/styledBackgroundImage";
 import StyledSection from "../components/styledSection"
 import { PRIMARY, SECONDARY } from "../common/colors"
+import DownArrow from "../components/downArrow"
 
 const StyledUl = styled.ul`
   list-style: none;
@@ -48,7 +49,7 @@ const StyledUl = styled.ul`
   }
 `
 
-const IndexPage = props => {
+const IndexPage = () => {
   const { t } = useTranslation()
 
   return (
@@ -63,11 +64,13 @@ const IndexPage = props => {
             .map((item, key) => {
               return <p key={key}>{item}</p>
             })}
+
+            <DownArrow nextSectionNr={1}></DownArrow>
         </StyledContainer>
       </StyledSection>
       <StyledSection>
         <StyledBackgroundImage background={secondImage}></StyledBackgroundImage>
-        <StyledContainer style={{ minHeight: "100vh" }}>
+        <StyledContainer className="bottom-container">
           <h2>{t("home.options")}</h2>
           <StyledUl>
             {t("home.optionsList")

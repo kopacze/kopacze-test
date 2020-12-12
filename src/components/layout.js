@@ -30,6 +30,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Roboto Mono', monospace;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
 `
 
 const Layout = ({ children, t }) => {
@@ -49,7 +53,7 @@ const Layout = ({ children, t }) => {
       <GlobalStyle />
       <HamburgerNav>{Links}</HamburgerNav>
       <Header>{Links}</Header>
-      <div>
+      <div style={{marginBottom: "59px"}}>
         <main>{children}</main>
       </div>
       <StyledFooter>

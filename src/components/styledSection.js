@@ -7,10 +7,11 @@ const StyledSection = styled.section`
   &:after {
     content: "";
     height: 10px;
-    bottom: -5px;
+    bottom: 0;
     width: 100%;
     background-color: ${SECONDARY};
     display: block;
+    position: absolute;
   }
 `
 
