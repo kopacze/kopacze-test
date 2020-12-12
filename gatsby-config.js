@@ -1,9 +1,10 @@
 const path = require('path')
 
 module.exports = {
+  pathPrefix: '/kopacze-diggers',
   siteMetadata: {
     title: `Kopacze - Diggers`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Website of Kopacze-Diggers collective`,
     author: `@jakub-wisniowski`,
   },
   plugins: [
