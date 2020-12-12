@@ -29,7 +29,6 @@ const StyledUl = styled.ul`
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.3rem;
 
     border: 5px solid ${SECONDARY};
     box-shadow: 6px 4px ${PRIMARY};

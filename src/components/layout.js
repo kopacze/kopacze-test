@@ -10,6 +10,7 @@ import {PRIMARY} from "../common/colors";
 const StyledFooter = styled.footer`
   position: fixed;
   width: 100%;
+  height: 60px;
   bottom: 0;
   left: 0;
   padding: 20px 50px;
@@ -34,6 +35,47 @@ const GlobalStyle = createGlobalStyle`
     html {
       scroll-behavior: smooth;
     }
+
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    padding: 20px 0;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+
+  li {
+    font-size: 1.3rem;
+  }
+
+  div {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    div {
+      font-size: 0.8rem;
+    }
+  }
 `
 
 const Layout = ({ children, t }) => {
@@ -53,7 +95,7 @@ const Layout = ({ children, t }) => {
       <GlobalStyle />
       <HamburgerNav>{Links}</HamburgerNav>
       <Header>{Links}</Header>
-      <div style={{marginBottom: "59px"}}>
+      <div style={{marginBottom: "60px"}}>
         <main>{children}</main>
       </div>
       <StyledFooter>
