@@ -16,6 +16,9 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
   height: 100px;
+  @media all and (max-width: 900px) {
+    height: 60px;
+  }
 `
 
 const StyledLinksWrapper = styled.div`

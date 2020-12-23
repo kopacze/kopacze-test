@@ -2,7 +2,6 @@ import React from "react"
 import { withTrans } from "../i18n/withTrans"
 import Header from "./header"
 import { createGlobalStyle } from "styled-components"
-import HamburgerNav from "./hamburgerNav"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import {PRIMARY} from "../common/colors";
