@@ -4,7 +4,7 @@ import Header from "./header"
 import { createGlobalStyle } from "styled-components"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import {PRIMARY} from "../common/colors";
+import { PRIMARY } from "../common/colors"
 
 const StyledFooter = styled.footer`
   position: fixed;
@@ -39,6 +39,10 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 3rem;
+    margin-bottom: 20px;
+    @media all and (max-width: 700px) {
+      white-space: pre-line;
+    }
   }
 
   h2 {
@@ -59,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     h1 {
       font-size: 1.7rem;
     }
@@ -94,7 +98,7 @@ const Layout = ({ children, t }) => {
     <div>
       <GlobalStyle />
       <Header>{Links}</Header>
-      <div style={{marginBottom: "60px"}}>
+      <div style={{ marginBottom: "60px" }}>
         <main>{children}</main>
       </div>
       <StyledFooter>

@@ -69,7 +69,7 @@ const IndexPage = () => {
       </StyledSection>
       <StyledSection>
         <StyledBackgroundImage background={secondImage}></StyledBackgroundImage>
-        <StyledContainer className="bottom-container">
+        <StyledContainer>
           <h2>{t("home.options")}</h2>
           <StyledUl>
             {t("home.optionsList")

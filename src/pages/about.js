@@ -30,7 +30,7 @@ const AboutPage = () => {
       </StyledSection>
       <StyledSection>
         <StyledBackgroundImage background={secondImage}></StyledBackgroundImage>
-        <StyledContainer className="bottom-container">
+        <StyledContainer>
           <h1>{t("about.space")}</h1>
           {t("about.aboutSpace")
             .split("\n")

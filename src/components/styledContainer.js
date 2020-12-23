@@ -13,8 +13,8 @@ const StyledContainer = styled.div`
   justify-content: center;
   opacity: 1;
 
-  &.bottom-container {
-    min-height: calc(100vh - 57px);
+  @media all and (max-width: 901px) {
+    min-height: calc(100vh - 95px);
   }
 
   h1,
