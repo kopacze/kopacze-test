@@ -15,7 +15,7 @@ const StyledFooter = styled.footer`
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: ${PRIMARY};
-  color: white;
+  color: black;
 `
 
 const StyledFooterContent = styled.div`
