@@ -13,7 +13,8 @@ const StyledFooter = styled.footer`
   height: 60px;
   bottom: 0;
   left: 0;
-  padding: 20px 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: ${PRIMARY};
   color: white;
 `
