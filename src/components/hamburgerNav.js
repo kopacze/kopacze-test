@@ -71,14 +71,14 @@ const StyledHamburgerNav = styled.nav`
 `
 
 const StyledHamburger = styled.button`
-  position: fixed;
+  position: relative;
   display: inline-block;
   cursor: pointer;
   background-color: transparent;
   border: 0;
   z-index: 999;
   transform: ${({ hamburger }) =>
-    hamburger ? "translate(230px, -50%)" : "translate(0, -50%)"};
+    hamburger ? "translate(230px, 0)" : "translate(0, 0)"};
   transition: transform 250ms ease-in-out;
   transition-delay: 250ms;
 

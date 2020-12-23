@@ -11,8 +11,13 @@ const StyledLanguageMenu = styled(LanguageMenu)`
 `
 
 const StyledHeader = styled.header`
-  background: ${PRIMARY};
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: ${PRIMARY};
   justify-content: center;
   align-items: center;
   height: 100px;
