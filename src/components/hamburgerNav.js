@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import {PRIMARY, SECONDARY} from "../common/colors";
+import { PRIMARY, SECONDARY } from "../common/colors"
 
 const StyledHamburgerMenuWrapper = styled.div`
+  width: 100%;
   @media all and (min-width: 901px) {
     &,
     * {
@@ -15,6 +16,8 @@ const StyledHamburgerNav = styled.nav`
   width: 300px;
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   padding: 100px 50px 0;
   display: flex;
   flex-direction: column;
@@ -23,6 +26,7 @@ const StyledHamburgerNav = styled.nav`
   transform: ${({ showNav }) =>
     showNav ? "translateX(0px)" : "translateX(-300px)"};
   transition: transform 250ms ease-in-out;
+  transition-delay: 250ms;
   z-index: 1;
   opacity: 0.95;
 
@@ -36,12 +40,12 @@ const StyledHamburgerNav = styled.nav`
     padding: 10px 0;
     position: relative;
 
-    &:hover {
+    &:focus {
       color: ${PRIMARY};
     }
   }
 
-  &:not(:hover) {
+  &:not(:focus) {
     a[aria-current]::after {
       content: "";
       position: absolute;
@@ -53,8 +57,8 @@ const StyledHamburgerNav = styled.nav`
     }
   }
 
-  &:hover {
-    a:hover::after {
+  &:focus {
+    a:focus::after {
       content: "";
       position: absolute;
       top: 0;
@@ -67,18 +71,20 @@ const StyledHamburgerNav = styled.nav`
 `
 
 const StyledHamburger = styled.button`
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  padding: 10px;
+  position: fixed;
   display: inline-block;
   cursor: pointer;
   background-color: transparent;
   border: 0;
   z-index: 999;
   transform: ${({ hamburger }) =>
-    hamburger ? "translate(0,0)" : "translate(20px, 20px)"};
+    hamburger ? "translate(230px, -50%)" : "translate(0, -50%)"};
   transition: transform 250ms ease-in-out;
+  transition-delay: 250ms;
+
+  &:focus {
+    outline: none;
+  }
 `
 
 const HamburgerBox = styled.span`

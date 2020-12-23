@@ -4,12 +4,14 @@ import styled from "styled-components"
 
 const StyledButton = styled.button`
   position: absolute;
-  right: 30px;
-  padding: 14px;
-  width: 45px;
+  right: 0;
   cursor: pointer;
   background-color: transparent;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
 `
 
 const LanguageMenu = props => {

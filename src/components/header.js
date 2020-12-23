@@ -1,8 +1,9 @@
 import React from "react"
 import LanguageMenu from "./languageMenu"
 import styled from "styled-components"
-import {PRIMARY, SECONDARY} from "../common/colors";
-
+import { PRIMARY, SECONDARY } from "../common/colors"
+import StyledContainer from "./styledContainer"
+import HamburgerNav from "./hamburgerNav";
 
 const StyledLanguageMenu = styled(LanguageMenu)`
   position: absolute;
@@ -69,8 +70,11 @@ const StyledLinksWrapper = styled.div`
 
 const Header = ({ children }) => (
   <StyledHeader>
-    <StyledLinksWrapper>{children}</StyledLinksWrapper>
-    <StyledLanguageMenu></StyledLanguageMenu>
+    <StyledContainer>
+      <HamburgerNav>{children}</HamburgerNav>
+      <StyledLinksWrapper>{children}</StyledLinksWrapper>
+      <StyledLanguageMenu></StyledLanguageMenu>
+    </StyledContainer>
   </StyledHeader>
 )
 

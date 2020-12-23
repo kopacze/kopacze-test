@@ -94,7 +94,6 @@ const Layout = ({ children, t }) => {
   return (
     <div>
       <GlobalStyle />
-      <HamburgerNav>{Links}</HamburgerNav>
       <Header>{Links}</Header>
       <div style={{marginBottom: "60px"}}>
         <main>{children}</main>
