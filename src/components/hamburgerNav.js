@@ -85,7 +85,9 @@ const StyledHamburger = styled.button`
   &:focus {
     outline: none;
   }
-`
+`.attrs({
+  'aria-label': 'Toggle menu',
+})``;
 
 const HamburgerBox = styled.span`
   width: 24px;
