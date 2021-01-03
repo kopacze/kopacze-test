@@ -85,9 +85,7 @@ const StyledHamburger = styled.button`
   &:focus {
     outline: none;
   }
-`.attrs({
-  'aria-label': 'Toggle menu',
-})``;
+`;
 
 const HamburgerBox = styled.span`
   width: 24px;
@@ -141,7 +139,7 @@ const HamburgerNav = ({ children }) => {
       <StyledHamburgerNav showNav={menu} onClick={() => showMenu(!menu)}>
         {children}
       </StyledHamburgerNav>
-      <StyledHamburger hamburger={menu} onClick={() => showMenu(!menu)}>
+      <StyledHamburger hamburger={menu} onClick={() => showMenu(!menu)} aria-label="Toggle menu">
         <HamburgerBox>
           <HamburgerInner hamburger={menu} />
         </HamburgerBox>
