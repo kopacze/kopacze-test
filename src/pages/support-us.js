@@ -23,7 +23,7 @@ const SupportUsPage = () => {
               return <p key={key}>{item}</p>
             })}
 
-            <span style={{fontWeight: 'bold', fontSize: '1.3rem'}}>kopacze@riseup.net</span>
+            <span style={{fontWeight: 'bold', fontSize: '1.3rem'}}>kopacze_diggers@riseup.net</span>
         </StyledContainer>
       </StyledSection>
     </>
