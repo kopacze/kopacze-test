@@ -115,6 +115,9 @@ const Layout = ({ children, t }) => {
     <Link to="/support-us" key="navLink3">
       {t("menu.supportUs")}
     </Link>,
+    <Link to="/gallery" key="navLink4">
+      {t("menu.gallery")}
+    </Link>,
   ]
   return (
     <div>

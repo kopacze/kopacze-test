@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 import firstImage from "../assets/kopacze-4.jpeg"
 import secondImage from "../assets/kopacze-3.jpeg"
-import StyledContainer from "../components/styledContainer";
-import StyledBackgroundImage from "../components/styledBackgroundImage";
+import StyledContainer from "../components/styledContainer"
+import StyledBackgroundImage from "../components/styledBackgroundImage"
 import StyledSection from "../components/styledSection"
 import { PRIMARY, SECONDARY } from "../common/colors"
 import DownArrow from "../components/downArrow"
@@ -53,7 +53,7 @@ const IndexPage = () => {
 
   return (
     <>
-    <SEO title={t("home.seoTitle")} />
+      <SEO title={t("home.seoTitle")} />
       <StyledSection>
         <StyledBackgroundImage background={firstImage}></StyledBackgroundImage>
         <StyledContainer>
@@ -64,7 +64,7 @@ const IndexPage = () => {
               return <p key={key}>{item}</p>
             })}
 
-            <DownArrow nextSectionNr={1}></DownArrow>
+          <DownArrow nextSectionNr={1}></DownArrow>
         </StyledContainer>
       </StyledSection>
       <StyledSection>
@@ -80,7 +80,8 @@ const IndexPage = () => {
           </StyledUl>
         </StyledContainer>
       </StyledSection>
-      <StyledSection>
+      {/* CAMP SECTION */}
+      {/* <StyledSection>
         <StyledBackgroundImage background={secondImage}></StyledBackgroundImage>
         <StyledContainer>
           <h2>{t("home.campHeader")}</h2>
@@ -91,7 +92,7 @@ const IndexPage = () => {
               })}
           <a href={t("home.campHref")}>{t("home.campLink")}</a>
         </StyledContainer>
-      </StyledSection>
+      </StyledSection> */}
     </>
   )
 }

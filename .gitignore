@@ -54,6 +54,8 @@ typings/
 # dotenv environment variable files
 .env*
 
+package-lock.json
+
 # gatsby files
 .cache/
 public
