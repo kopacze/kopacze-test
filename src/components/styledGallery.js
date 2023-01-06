@@ -8,6 +8,7 @@ const StyledGallery = styled.div`
 
   img {
     width: 80%;
+    max-height: 80vh;
     margin: 30px 0;
     border: 3px solid ${PRIMARY};
   }
