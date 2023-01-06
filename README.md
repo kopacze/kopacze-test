@@ -8,7 +8,14 @@ To publish page
 
 Repo structure
 
-Code to be deployed to page is at `gh-pages`, source for project is at `master`
+Code to be deployed to page is at `gh-pages`, source for project is at `master`. To configure the repo:
+
+1. push the code to master branch
+2. Go to Settings -> Pages
+3. In Build and deployment set Source to Deploy from a branch
+4. Select gh-pages and root in Branch section
+5. Add custom domain: kopacze.space
+6. Check Enforce HTTPS option
 
 Errors
 
