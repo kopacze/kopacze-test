@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/support-us/`, `/about/`],
+        precachePages: [`/support-us/`, `/cooperation/`],
       },
     },
     `gatsby-plugin-advanced-sitemap`,

@@ -15,9 +15,9 @@ const StyledSection = styled.section`
   }
 
   [class^="styledContainer"] {
-      min-height: calc(100vh - 155px);
+      min-height: calc(100vh - 205px);
     @media (max-width: 500px) {
-      min-height: calc(100vh - 95px);
+      min-height: calc(100vh - 190px);
     }
   }
 `

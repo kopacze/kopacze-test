@@ -6,22 +6,44 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { PRIMARY } from "../common/colors"
 
+
+const StyledChildrenWrapper = styled.div`
+  margin-bottom: 105px;
+  @media (max-width: 700px) {
+      margin-bottom: 130px;
+    }
+`
 const StyledFooter = styled.footer`
   position: fixed;
   width: 100%;
-  height: 60px;
+  height: 105px;
   bottom: 0;
   left: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: ${PRIMARY};
   color: black;
+  @media (max-width: 700px) {
+      height: 130px;
+    }
 `
 
 const StyledFooterContent = styled.div`
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: 700px) {
+      flex-direction: column;
+    }
+`
+
+const FooterEmailWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -44,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
       white-space: pre-line;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
       margin-bottom: 0;
     }
   }
@@ -85,7 +107,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     h1 {
       font-size: 1.3rem;
     }
@@ -109,8 +131,8 @@ const Layout = ({ children, t }) => {
     <Link to="/" key="navLink1">
       {t("menu.home")}
     </Link>,
-    <Link to="/about" key="navLink2">
-      {t("menu.about")}
+    <Link to="/cooperation" key="navLink2">
+      {t("menu.cooperation")}
     </Link>,
     <Link to="/support-us" key="navLink3">
       {t("menu.supportUs")}
@@ -123,12 +145,20 @@ const Layout = ({ children, t }) => {
     <div>
       <GlobalStyle />
       <Header>{Links}</Header>
-      <div style={{ marginBottom: "60px" }}>
+      <StyledChildrenWrapper>
         <main>{children}</main>
-      </div>
+      </StyledChildrenWrapper>
       <StyledFooter>
         <StyledFooterContent>
-          © {new Date().getFullYear()}, {t("footer")}
+          <div>
+            KRS: 0001024807<br></br>
+            NIP: 9512564070<br></br>
+            REGON: 52475973600000<br></br>
+          </div>
+          <FooterEmailWrapper>
+            <div>email: kopacze@protonmail.com<br></br></div>
+            <div>© {new Date().getFullYear()}, {t("footer")}</div>
+          </FooterEmailWrapper>
         </StyledFooterContent>
       </StyledFooter>
     </div>

@@ -27,12 +27,6 @@ const GalleryPage = () => {
         <StyledBackgroundImage background={firstImage}></StyledBackgroundImage>
         <StyledContainer>
           <h1>{t("gallery.title")}</h1>
-          {t("gallery.content")
-            .split("\n")
-            .map((item, key) => {
-              return <p key={key}>{item}</p>
-            })}
-
           <DownArrow nextSectionNr={1}></DownArrow>
         </StyledContainer>
       </StyledSection>

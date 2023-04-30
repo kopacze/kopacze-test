@@ -1,4 +1,4 @@
-const PRIMARY = 'rgb(255,20,147)';
-const SECONDARY = '#C0C0C0';
+const PRIMARY = '#dd4da4';
+const SECONDARY = '#262024';
 
 export {PRIMARY, SECONDARY};
