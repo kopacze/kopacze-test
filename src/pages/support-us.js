@@ -6,6 +6,7 @@ import StyledContainer from "../components/styledContainer"
 import StyledBackgroundImage from "../components/styledBackgroundImage"
 import firstImage from "../assets/kopacze-8.jpeg"
 import StyledSection from "../components/styledSection"
+import StyledActionButton from "../components/styledActionButton"
 
 const SupportUsPage = () => {
   const { t } = useTranslation()
@@ -16,7 +17,7 @@ const SupportUsPage = () => {
       <StyledSection>
         <StyledBackgroundImage background={firstImage}></StyledBackgroundImage>
         <StyledContainer>
-          <h1>{t("supportUs.title")}</h1>
+          <h1><StyledActionButton href="https://subscribepage.io/g6NNPw">{t("supportUs.title")}</StyledActionButton></h1>
           {t("supportUs.content")
             .split("\n")
             .map((item, key) => {
