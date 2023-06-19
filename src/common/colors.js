@@ -1,4 +1,4 @@
-const PRIMARY = '#dd4da4';
+const PRIMARY = '#dc3545';
 const SECONDARY = '#262024';
 
 export {PRIMARY, SECONDARY};
