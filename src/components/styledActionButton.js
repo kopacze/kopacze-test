@@ -10,10 +10,15 @@ const StyledActionButton = styled.a`
   text-decoration: none;
   font-size: 40px;
   box-shadow: 2px 2px lightslategrey;
+  display: block;
 
   &:hover, &:focus {
     color: ${PRIMARY};
     background: white;
+  }
+  @media (max-width: 500px) {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 `
 

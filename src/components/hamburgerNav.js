@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, Children, cloneElement } from "react"
 import styled from "styled-components"
 import { PRIMARY, SECONDARY } from "../common/colors"
 
@@ -85,7 +85,7 @@ const StyledHamburger = styled.button`
   &:focus {
     outline: none;
   }
-`;
+`
 
 const HamburgerBox = styled.span`
   width: 24px;
@@ -133,15 +133,23 @@ const HamburgerInner = styled.span`
 `
 
 const HamburgerNav = ({ children }) => {
-  const [menu, showMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
   return (
     <StyledHamburgerMenuWrapper>
-      <StyledHamburgerNav showNav={menu} onClick={() => showMenu(!menu)}>
-        {children}
+      <StyledHamburgerNav showNav={showMenu} onClick={() => setShowMenu(!menu)}>
+        {Children.map(children, child => {
+          return cloneElement(child, {
+            tabIndex: showMenu ? 1 : 0,
+          })
+        })}
       </StyledHamburgerNav>
-      <StyledHamburger hamburger={menu} onClick={() => showMenu(!menu)} aria-label="Toggle menu">
+      <StyledHamburger
+        hamburger={showMenu}
+        onClick={() => setShowMenu(!menu)}
+        aria-label="Toggle menu"
+      >
         <HamburgerBox>
-          <HamburgerInner hamburger={menu} />
+          <HamburgerInner hamburger={showMenu} />
         </HamburgerBox>
       </StyledHamburger>
     </StyledHamburgerMenuWrapper>

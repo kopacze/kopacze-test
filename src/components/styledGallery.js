@@ -11,6 +11,7 @@ const StyledGallery = styled.div`
     max-height: 80vh;
     margin: 30px 0;
     border: 3px solid ${PRIMARY};
+    border-radius: 5px;
   }
 `
 
