@@ -32,7 +32,7 @@ const GalleryPage = () => {
       </StyledSection>
       <StyledSection>
         <StyledGallery>
-          {images.map((img, i) => (
+          {images.filter(img => !img.includes('kopacze-1')).map((img, i) => (
             <img src={img} alt={"image " + i} key={img}></img>
           ))}
         </StyledGallery>

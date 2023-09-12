@@ -136,16 +136,16 @@ const HamburgerNav = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <StyledHamburgerMenuWrapper>
-      <StyledHamburgerNav showNav={showMenu} onClick={() => setShowMenu(!menu)}>
+      <StyledHamburgerNav showNav={showMenu} onClick={() => setShowMenu(!showMenu)}>
         {Children.map(children, child => {
           return cloneElement(child, {
-            tabIndex: showMenu ? 1 : 0,
+            tabIndex: showMenu ? 0 : -1,
           })
         })}
       </StyledHamburgerNav>
       <StyledHamburger
         hamburger={showMenu}
-        onClick={() => setShowMenu(!menu)}
+        onClick={() => setShowMenu(!showMenu)}
         aria-label="Toggle menu"
       >
         <HamburgerBox>
