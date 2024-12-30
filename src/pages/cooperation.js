@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { useTranslation } from "react-i18next"
 import StyledContainer from "../components/styledContainer"
 import StyledBackgroundImage from "../components/styledBackgroundImage"
-import firstImage from "../assets/kopacze-5.jpeg"
+import firstImage from "../assets/kopacze-5.webp"
 import StyledSection from "../components/styledSection"
 import { PRIMARY, SECONDARY } from "../common/colors"
 import styled from "styled-components"
@@ -38,7 +38,6 @@ const StyledUl = styled.ul`
     }
   }
 `
-
 
 const CooperationPage = () => {
   const { t } = useTranslation()

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import StyledContainer from "../components/styledContainer"
 import StyledBackgroundImage from "../components/styledBackgroundImage"
 import StyledGallery from "../components/styledGallery"
-import firstImage from "../assets/kopacze-6.jpeg"
+import firstImage from "../assets/kopacze-6.webp"
 import StyledSection from "../components/styledSection"
 import DownArrow from "../components/downArrow"
 
@@ -14,7 +14,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../assets", false, /\.(png|jpe?g|svg)$/)
+  require.context("../assets", false, /\.(png|jpe?g|svg|webp)$/)
 )
 
 const GalleryPage = () => {
@@ -32,9 +32,11 @@ const GalleryPage = () => {
       </StyledSection>
       <StyledSection>
         <StyledGallery>
-          {images.filter(img => !img.includes('kopacze-1')).map((img, i) => (
-            <img src={img} alt={"image " + i} key={img}></img>
-          ))}
+          {images
+            .filter(img => !img.includes("kopacze-1"))
+            .map((img, i) => (
+              <img src={img} alt={"image " + i} key={img}></img>
+            ))}
         </StyledGallery>
       </StyledSection>
     </>

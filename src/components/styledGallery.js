@@ -9,7 +9,7 @@ const StyledGallery = styled.div`
 
   img {
     width: 80%;
-    max-height: 80vh;
+    max-height: 60vh;
     border: 3px solid ${PRIMARY};
     border-radius: 5px;
     margin: 0 auto;
